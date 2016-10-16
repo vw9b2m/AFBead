@@ -3,7 +3,7 @@
 - A beadandómban egy kezdő/haladó íróknak való novella-gyűjtő oldalt valósítok meg.
 - Az oldal lehetővé teszi a vendégként való böngészést, illetve regisztrált tagoknak a feltöltést is.
 - A novellákat Kategóriákba lehet sorolni, egyszerre többe is.(sok- a sokhoz kapcsolat)
-- A novellákat (regisztrált tagként) lehet a "Kedvenc" - listához adni, ami lehetővé teszi az értékelést is.
+- A novellákat (regisztrált tagként) lehet a "Kedvenc" - listához adni, ami lehetővé teszi az értékelést is.(egy felhasználónak egy kedvenc listája lesz)
 
 ## Novellák
 ### Funkcionális Követelmények
