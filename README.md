@@ -1,13 +1,14 @@
 # AFBead
 ## Novellák
 ### Funkcionális Követelmények
-** Vendég **
+**Vendég**
 - Vendégként az oldalon szeretnék kiemelt novellákat látni.
 - Vendégként szeretnék az oldalon a novellák között szabadon böngészni.
 - Vendégként szeretnék egy novella-leírást megtekinteni.
 - Vendégként szeretnék novellát keresni.
 - Vendégként szeretnék tudni regisztrálni az oldalra.
-** Felhasználó **
+
+**Felhasználó**
 - Felhasználóként szeretnék tudni bejentkezni.
 - Felhasználóként szeretném a profilom szerkeszteni.
 - Felhasználóként szeretnék hozzáadni novellákat a "Kedvencekhez".
