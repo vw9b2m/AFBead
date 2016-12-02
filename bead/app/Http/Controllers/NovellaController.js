@@ -22,8 +22,8 @@ class NovellaController {
         })
     }
 
-    * doCreate(req.req){
-           const recipeData = req.all()
+    * doCreate(req, res){
+           const novellaData = req.all()
 
         // 2. validáció
         const rules = {
@@ -46,15 +46,15 @@ class NovellaController {
         // TODO: check category
 
         const novella = new Novella()
-        novella.title = recipeData.title
+        novella.title = novellaData.title
         novella.user_id = 1
-        novella.category_id = recipeData.category
-        novella.author = recipeData.ingredients
-        novella.instructions = recipeData.instructions
+        novella.category_id = novellaData.category
+        novella.author = novellaData.author
+        novella.leiras = novellaData.leiras
 
-        yield recipe.save()
+        yield novella.save()
 
-        res.redirect(`/recipe/${recipe.id}`)
+        res.redirect(`/novella/${novella.id}`)
     }
 
 }
