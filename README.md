@@ -17,8 +17,7 @@
 
 **Felhasználó**
 - Felhasználóként szeretnék tudni bejentkezni.
-- Felhasználóként szeretném a profilom szerkeszteni.
-- Felhasználóként szeretnék hozzáadni novellákat a "Kedvencekhez".
+- Felhasználóként szeretném a profilom szerkeszteni.	
 - Felhasználóként szeretnék új novellákat beküldeni.
 - Felhasználóként szeretném a saját novelláim módosítani, törölni.
 

@@ -17,4 +17,8 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.get('/', 'NovellaController.main')
+Route.get('/novella/create', 'NovellaController.create').middleware('auth')
+Route.post('/novella/create', 'NovellaController.doCreate').middleware('auth')
+
+//Route.on('/').render('welcome')
