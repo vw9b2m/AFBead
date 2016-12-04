@@ -1,0 +1,18 @@
+{% extends 'master' %}
+
+{% block content %}
+<h1>{{ book.title }}</h1>
+<p>by {{ book.author }}</p>
+<p>{{ book.category.name }}</p>
+<pre>{{ book.description }}</pre>
+
+<form action="/novella/{{ book.id }}/delete" method="POST">
+    {{ csrfField }}
+    {% if currentUser %}
+    <a class="btn btn-primary" href="/novella/{{ book.id }}/edit" role="button">Módosítás</a>
+    <button type="submit" class="btn btn-danger">Törlés</button>
+    {% endif %}
+</form>
+
+
+{% endblock %}

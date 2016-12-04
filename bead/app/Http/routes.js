@@ -21,4 +21,9 @@ Route.get('/', 'NovellaController.main')
 Route.get('/novella/create', 'NovellaController.create').middleware('auth')
 Route.post('/novella/create', 'NovellaController.doCreate').middleware('auth')
 
+Route.get('/novella/:id', 'NovellaController.show')
+Route.get('/novella/:id/edit', 'NovellaController.edit')
+Route.post('/novella/:id/edit', 'NovellaController.doEdit')
+Route.post('/novella/:id/delete', 'NovellaController.doDelete')
+
 //Route.on('/').render('welcome')
