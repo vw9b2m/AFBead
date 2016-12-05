@@ -56,6 +56,7 @@ class NovellaController {
         novella.author = novellaData.author
         novella.category_id = novellaData.category
         novella.description = novellaData.description
+        novella.user_id = user.id
         
         
         
@@ -98,9 +99,9 @@ class NovellaController {
 
         // 2. validáció
         const rules = {
-            'name': 'required|min:3',
-            'ingredients': 'required',
-            'instructions': 'required',
+            'title': 'required|min:3',
+            'author': 'required',
+            'description': 'required',
         }
 
         const validation = yield Validator.validateAll(bookData, rules)
@@ -110,7 +111,7 @@ class NovellaController {
                 .andWith({ errors: validation.messages() })
                 .flash()
 
-            res.redirect(`/novella/${novella.id}/edit`)
+            res.redirect(`/novella/${book.id}/edit`)
             return
         }
 
