@@ -20,6 +20,7 @@ const Route = use('Route')
 Route.get('/', 'NovellaController.main')
 Route.get('/novella/create', 'NovellaController.create').middleware('auth')
 Route.post('/novella/create', 'NovellaController.doCreate').middleware('auth')
+Route.get('/browse', 'NovellaController.browse')
 
 Route.get('/novella/:id', 'NovellaController.show')
 Route.get('/novella/:id/edit', 'NovellaController.edit')
@@ -28,6 +29,7 @@ Route.post('/novella/:id/delete', 'NovellaController.doDelete')
 
 Route.get('/register', 'UserController.register')
 Route.post('/register', 'UserController.doRegister')
+
 
 Route.get('/login', 'UserController.login')
 Route.post('/login', 'UserController.doLogin')

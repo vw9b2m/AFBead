@@ -1,0 +1,23 @@
+{% extends 'master' %}
+
+{% block content %}
+
+<div class="row">
+    {% for category in categories %}
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">{{ category.name }}</div>
+
+            <!-- List group -->
+            <ul class="list-group">
+                {% for novella in category.topBooks %}
+                <li class="list-group-item">
+                    <a href="/novella/{{ novella.id }}">{{ novella.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

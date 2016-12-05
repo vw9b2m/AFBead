@@ -18,6 +18,19 @@ class NovellaController {
         })
     }
 
+    * browse(req, res){
+          const categories = yield Category.all()
+
+        for (const category of categories) {
+            const topBooks = yield category.books().fetch()
+            category.topBooks = topBooks.toJSON()
+        }
+
+        yield res.sendView('browse', {
+            categories: categories.toJSON()
+        })
+    }
+
     * create(req, res){
         const categories = yield Category.all()
 
