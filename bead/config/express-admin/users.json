@@ -1,8 +1,8 @@
 {
-    "ame": {
-        "name": "ame",
+    "Ame": {
+        "name": "Ame",
         "admin": true,
-        "salt": "/sxABMaKwe0wXl2OG5Tzjbim15qFTFAWljOqWfnykENeiashSly6y45fwkSXvo4ugaz4NdWe7RbU3sL2RFFWUSa2jmY2iXq5Mx8wCsZxVOtdNpmsD1OIInbSUF8y42Fw3S1hQQ59YQQ0Zg3kMEoq5CwEYgL/5fCnS53tDQ+WiHs=",
-        "hash": "KSn1zsGKKCyXn3lQtE/8/DoDJpfNnw+Kpi4C03eQj244t2lLb85OE2VK7Owg0vNUP7gwmefWGd9u8njNLCAvf6jKySHJAuLggub4cEOCLbL++uH+ZGu4OCct/oZmpCDNev+wGD0+uBrgeZGMYMk5d25Ns/YxKxx0APfikgsz1NA="
+        "salt": "tS3xF4XNAYLtgsXhj2h+gOHCuocraKADLp8d5kqWWJOlEMBStZ7hfILuOxlDzZ/+irZmmeTwfKmZ1Q1h4L00fOdsCIGknaYglaN0D/aHC5U9Vk0TUoXEzLR6wUg1Z57ptqnUCS/MO9vV7NaF2LSMTQ6NC2DsWcS1g42jLqY1sNw=",
+        "hash": "szdn35FzML4UdC93h45pK7m2I/elQnEvU8T62gI3VYpdn9z0oScoVLFeaUh7s+Mq1SHDk85d0MSVc9l+YLeByRDXQWr2K5fd/j10mBET23uyeM01g0hkXhk8mhttxEZ4g7SdeeoZbjX9EG0U85fh+NJSlwI+fab0WKgVjx8bd9E="
     }
 }
