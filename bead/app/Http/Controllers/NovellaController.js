@@ -1,5 +1,6 @@
 'use strict'
 
+const Validator = use('Validator')
 const Category = use('App/Model/Category')
 const Book= use('App/Model/Book')
 
@@ -31,19 +32,20 @@ class NovellaController {
 
         // 2. validáció
         const rules = {
-            'name': 'required|min:3',
-            'ingredients': 'required',
-            'instructions': 'required',
+            'title': 'required|min:3',
+            'author': 'required',
+            'description': 'required'
+            
         }
         
-        const validation = yield Validator.validateAll(recipeData, rules)
+        const validation = yield Validator.validateAll(novellaData, rules)
         if (validation.fails()) {
             yield req
                 .withAll()
                 .andWith({ errors: validation.messages() })
                 .flash()
 
-            res.redirect('/recipe/create')
+            res.redirect('/novella/create')
             return
         }
 
@@ -83,6 +85,7 @@ class NovellaController {
     }
 
     * doEdit (req, res) {
+        const user = req.currentUser
         const book = yield Book.find(req.param('id'))
 
         if (book === null) {
@@ -100,14 +103,14 @@ class NovellaController {
             'instructions': 'required',
         }
 
-        const validation = yield Validator.validateAll(recipeData, rules)
+        const validation = yield Validator.validateAll(bookData, rules)
         if (validation.fails()) {
             yield req
                 .withAll()
                 .andWith({ errors: validation.messages() })
                 .flash()
 
-            res.redirect(`/recipe/${recipe.id}/edit`)
+            res.redirect(`/novella/${novella.id}/edit`)
             return
         }
 
@@ -117,10 +120,19 @@ class NovellaController {
         book.author = bookData.author
         book.category_id = bookData.category
         book.description = bookData.description
+        book.user_id = user.id
 
         yield book.save()
 
         res.redirect(`/novella/${book.id}`)
+    }
+
+    * doDelete (req, res) {
+        const book = yield Book.find(req.param('id'))
+
+        yield book.delete()
+
+        res.redirect('/')
     }
 
 }

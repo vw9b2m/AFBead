@@ -11,7 +11,6 @@ class BooksTableSchema extends Schema {
       table.string('author', 100).notNullable()
       table.integer('category_id').unsigned().references('id').inTable('categories')
       table.text('description').notNullable()
-      table.integer('user_id').unsigned().references('id').inTable('users')
       table.timestamps()
       table.unique(['title', 'author'])
     })
