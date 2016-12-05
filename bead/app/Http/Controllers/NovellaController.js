@@ -20,7 +20,7 @@ class NovellaController {
     * create(req, res){
         const categories = yield Category.all()
 
-        yield res.sendView('novellaCreate', {
+        yield res.sendView('bookCreate', {
             categories: categories.toJSON()
         })
     }
@@ -35,7 +35,7 @@ class NovellaController {
             'ingredients': 'required',
             'instructions': 'required',
         }
-        /*
+        
         const validation = yield Validator.validateAll(recipeData, rules)
         if (validation.fails()) {
             yield req
@@ -45,7 +45,7 @@ class NovellaController {
 
             res.redirect('/recipe/create')
             return
-        }*/
+        }
 
         // TODO: check category
 
@@ -54,7 +54,6 @@ class NovellaController {
         novella.author = novellaData.author
         novella.category_id = novellaData.category
         novella.description = novellaData.description
-        novella.user_id = user.id
         
         
         
@@ -100,7 +99,7 @@ class NovellaController {
             'ingredients': 'required',
             'instructions': 'required',
         }
-/*
+
         const validation = yield Validator.validateAll(recipeData, rules)
         if (validation.fails()) {
             yield req
@@ -110,17 +109,16 @@ class NovellaController {
 
             res.redirect(`/recipe/${recipe.id}/edit`)
             return
-        }*/
+        }
 
         // TODO: check category
 
         book.title = bookData.title
-        book.author = novellaData.author
-        book.category_id = novellaData.category
-        book.description = novellaData.description
-        book.user_id = user.id
+        book.author = bookData.author
+        book.category_id = bookData.category
+        book.description = bookData.description
 
-        yield rbook.save()
+        yield book.save()
 
         res.redirect(`/novella/${book.id}`)
     }

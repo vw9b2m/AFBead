@@ -26,4 +26,12 @@ Route.get('/novella/:id/edit', 'NovellaController.edit')
 Route.post('/novella/:id/edit', 'NovellaController.doEdit')
 Route.post('/novella/:id/delete', 'NovellaController.doDelete')
 
+Route.get('/register', 'UserController.register')
+Route.post('/register', 'UserController.doRegister')
+
+Route.get('/login', 'UserController.login')
+Route.post('/login', 'UserController.doLogin')
+Route.get('/logout', 'UserController.doLogout')
+
+
 //Route.on('/').render('welcome')

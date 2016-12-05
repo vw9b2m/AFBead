@@ -1,7 +1,7 @@
 {% extends 'master' %}
 
 {% block content %}
-<h1>Új novella regisztrálása</h1>
+<h1>Novella módosítása</h1>
 
 {% if old('errors') %}
 <div class="alert alert-danger" role="alert">
@@ -17,16 +17,16 @@
   {{ csrfField }}
   <!-- cím-->
   <div class="form-group">
-    <label for="inputName" class="col-sm-2 control-label">Cím</label>
+    <label for="inputTitle" class="col-sm-2 control-label">Cím</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputName" name="name" value="{{ old('name') }}">
+      <input type="text" class="form-control" id="inputTitle" name="title" value="{{ book.title }}">
     </div>
   </div>
 <!-- szerző -->
   <div class="form-group">
-    <label for="inputTitle" class="col-sm-2 control-label">Szerző</label>
+    <label for="inputAuthor" class="col-sm-2 control-label">Szerző</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputTitle" name="title" value="{{ old('title') }}">
+      <input type="text" class="form-control" id="inputAuthor" name="author" value="{{ book.author }}">
     </div>
   </div>
 <!-- kategória -->
@@ -44,7 +44,7 @@
   <div class="form-group">
     <label for="inputDescription" class="col-sm-2 control-label">Leírás</label>
     <div class="col-sm-10">
-      <textarea class="form-control" id="inputDescription" name="description">{{ old('description') }}</textarea>
+      <textarea class="form-control" id="inputDescription" name="description">{{ book.description }}</textarea>
     </div>
   </div>
 <!-- küldés-->

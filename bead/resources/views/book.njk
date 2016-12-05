@@ -8,10 +8,10 @@
 
 <form action="/novella/{{ book.id }}/delete" method="POST">
     {{ csrfField }}
-    {% if currentUser %}
+
     <a class="btn btn-primary" href="/novella/{{ book.id }}/edit" role="button">Módosítás</a>
     <button type="submit" class="btn btn-danger">Törlés</button>
-    {% endif %}
+
 </form>
 
 
