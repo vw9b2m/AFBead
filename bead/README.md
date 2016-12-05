@@ -37,7 +37,7 @@ Bejelentkezett felhasználó: A publikus oldalak elérésén felül egyéb funkc
 - Meglévő könyv/novella  szerkesztése
 - Meglévő könyv/novella  törlése
 
-[[https://github.com/vw9b2m/repository/AFBead/master/imgages/1.png|alt=1]]
+![alt tag](https://github.com/vw9b2m/repository/AFBead/master/imgages/1.png|alt=1)
 
 Vegyünk példának egy egyszerű folyamatot:
 
