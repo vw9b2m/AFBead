@@ -8,10 +8,15 @@
 
 <form action="/novella/{{ book.id }}/delete" method="POST">
     {{ csrfField }}
-    {% if currentUser.id == book.user_id %}
-    <a class="btn btn-primary" href="/novella/{{ book.id }}/edit" role="button">Módosítás</a>
-    <button type="submit" class="btn btn-danger">Törlés</button>
+    {% if currentUser %}
+        {% if currentUser.id == book.user_id %}
+        <a class="btn btn-primary" href="/novella/{{ book.id }}/edit" role="button">Módosítás</a>
+        <button type="submit" class="btn btn-danger">Törlés</button>
+        {% endif %}
+
+        <a class="btn btn-primary" href="/novella/{{ book.id }}/addToFavs" role="button">Kedvencekhez</a>
     {% endif %}
+    
 </form>
 
 

@@ -142,11 +142,31 @@ class NovellaController {
     }
 
     * doDelete (req, res) {
+        const user = req.currentUser
         const book = yield Book.find(req.param('id'))
+
+        yield user.favourites().detach([book.id])
+        yield book.fans().detach([user.id])
 
         yield book.delete()
 
         res.redirect('/')
+    }
+
+    * addToFavs(req, res){
+        const user = req.currentUser
+        const book = yield Book.find(req.param('id'))
+
+        if (book === null) {
+            res.notFound('Sorry, novel not found.')
+            return
+        }
+
+        yield user.favourites().attach([book.id])
+        yield book.fans().attach([user.id])
+
+        res.redirect(`/novella/${book.id}`)
+
     }
 
 }

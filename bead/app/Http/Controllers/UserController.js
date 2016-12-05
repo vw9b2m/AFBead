@@ -78,6 +78,14 @@ class UserController {
         // 4.
         res.redirect('/')
     }
+
+    * show(req, res){
+        const user = yield User.find(req.param('id'))
+        
+        yield res.sendView('user', {
+            user: user.toJSON()
+        })
+    }
 }
 
 module.exports = UserController
