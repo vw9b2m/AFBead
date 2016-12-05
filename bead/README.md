@@ -37,6 +37,8 @@ Bejelentkezett felhasználó: A publikus oldalak elérésén felül egyéb funkc
 - Meglévő könyv/novella  szerkesztése
 - Meglévő könyv/novella  törlése
 
+[[https://github.com/vw9b2m/repository/AFBead/master/imgages/1.png|alt=1]]
+
 Vegyünk példának egy egyszerű folyamatot:
 
 Meglévő könyv/novella szerkesztése:
@@ -97,7 +99,8 @@ Bejelentkezett:
 ### 2.2.3. Osztálymodell
 
 #### Adatmodell
-3. Implementáció
+
+## 3. Implementáció
 
 3.1.1. Fejlesztőkörnyezet
 
@@ -105,6 +108,42 @@ Adonis.js
 
 
 Követelmények: Böngésző
+Project élesítésének folyamata:
+1. Git repository leclone-ozása
+2. Helyi ide: Visual Studio Code megnyitása, fájl kiválasztása
+3. npm i paranccsal függősgek felépítése(ctrl + ö :terminál)
+4. npm run dev paranccsal localhost:3333 porton elindul a szerver
+5. node_modules\.bin\admin config\express-admin paranccsal localhost:4444 porton elindul az express admin
+6. kód módosítása
+7. bead mappából git add . , git commit -m 'leírás', git push parancsokkal mentjük a változtatásokat
 
+3.1.2. Könyvtárstruktúra
+- app
+    - http
+        - controllers
+            - NovellaController.js
+            - UserController.js
+        - route.js
+    - Model 
+        - Book
+        - Category
+        - Token
+        - User
+- config
+    - express-admin
+- database
+    - migrations
+    - development.sqlite
+- resources
+    - views
+        - book.njk
+        - bookCreate.njk
+        - bookEdit.njk
+        - browse.njk
+        - login.njk
+        - main.njk
+        - master.njk
+        - register.njk
+        - user.njk
+        - welcome.njk
 
-3.1.2. Könyvtárstruktúra, funkciók
