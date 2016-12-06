@@ -104,6 +104,8 @@ Bejelentkezett:
 
 #### Adatmodell
 
+![alt tag](https://github.com/vw9b2m/AFBead/blob/master/images/4.png)
+
 ## 3. Implementáció
 
 ### 3.1.1. Fejlesztőkörnyezet
