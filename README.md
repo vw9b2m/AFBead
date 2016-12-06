@@ -27,6 +27,7 @@ Funkcionális követelmények:
 
 - Novella: Rövid terjedelmű szépirodalmi mű
 - Könyv : Olyan, szövegből és ábrából álló, fizikai (papír) információhordozójú, nem periodikus (irodalmi vagy szakmai célú) publikáció, amely 49 vagy több oldalból áll.
+
 #### Egyéb:
 - Kedvencek : a felhasználó által összeállított lista a kedvenc könyveiből/novelláiból
 
@@ -117,13 +118,13 @@ Bejelentkezett:
 
 ## 3. Implementáció
 
-3.1.1. Fejlesztőkörnyezet
+### 3.1.1. Fejlesztőkörnyezet
 
-Adonis.js
+- Adonis.js
 
+- Követelmények: Böngésző
 
-Követelmények: Böngésző
-Project élesítésének folyamata:
+- Project élesítésének folyamata:
 
 1. Git repository leclone-ozása
 2. Helyi ide: Visual Studio Code megnyitása, fájl kiválasztása
