@@ -164,3 +164,24 @@ Bejelentkezett:
         - user.njk
         - welcome.njk
 
+## 4. Felhasználói dokumentáció
+- követelmények: Internet böngésző telepítése, JavaScript ajánlott
+
+### Program használata:
+
+- Böngészőben nyissuk meg a főoldalt
+- Jobb felső sarokban kattintsunk a Belépés feliratra
+- Belépés/Regisztráció után a Novellák oldalra jutunk
+- Felül a navigéciós bárban(körülbelül középen) Új novella beküldése gombra kattintva tudunk új könyvet/novellát felvenni a listába
+- Töltsük ki az űrlapot
+- Hibás adatok esetén az űrlap jelezni fogja a hibát
+- Ok gombra kattintva mentsük el az adatokat
+- A címre kattintva megjelenik a könyv/novella leírása
+- Törlés gombra kattintva törölhetjük a receptet
+- A Kedvencekhez gombra kattintva a könyvet/novellát kedvenchez adhatja
+- A Módosítás gombra kattintva szerkeszthetjük a könyvet/novellát
+- Böngészés alatt az összes novella/könyv kategória szerint megtekinthető
+
+## 5. Irodalomjegyzék:
+
+http://webprogramozas.inf.elte.hu/alkfejl.php
