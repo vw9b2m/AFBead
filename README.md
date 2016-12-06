@@ -113,6 +113,7 @@ Adonis.js
 
 Követelmények: Böngésző
 Project élesítésének folyamata:
+
 1. Git repository leclone-ozása
 2. Helyi ide: Visual Studio Code megnyitása, fájl kiválasztása
 3. npm i paranccsal függősgek felépítése(ctrl + ö :terminál)
