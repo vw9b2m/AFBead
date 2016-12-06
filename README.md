@@ -50,11 +50,15 @@ Meglévő könyv/novella szerkesztése:
 5. Szerkesztés oldalon felviszi az új adatokat
 6. Ok gombra kattintva elmenti a változásokat
 
+![alt tag](https://github.com/vw9b2m/AFBead/blob/master/images/2.png)
+
 ## 2. Tervezés
 
 ### 2.1. Architektúra terv
 
 #### 2.1.1. Komponensdiagram
+
+![alt tag](https://github.com/vw9b2m/AFBead/blob/master/images/3.png)
 
 #### 2.1.2. Oldaltérkép:
 
