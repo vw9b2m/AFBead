@@ -21,7 +21,16 @@ Funkcionális követelmények:
 - Megbízhatóság: jelszóval védett funkciók, és a jelszavak védelme a háttérben. Hibásan bevitt adatok esetén a program jól láthatóan jelezzen a felhasználónak. A jól bevitt adatok maradjanak az űrlapban.
 - Karbantarthatóság: könnyen lehessen bővíteni, a különböző típusú fájlok külön csoportosítva, ésszerűen legyenek felbontva, a könnyebb fejleszthetőség miatt
 
-### 1.2. Használatieset-modell, funkcionális követelmények
+### 1.2. Szakterületi fogalomjegyzék
+
+#### Fajták:
+
+- Novella: Rövid terjedelmű szépirodalmi mű
+- Könyv : Olyan, szövegből és ábrából álló, fizikai (papír) információhordozójú, nem periodikus (irodalmi vagy szakmai célú) publikáció, amely 49 vagy több oldalból áll.
+#### Egyéb:
+- Kedvencek : a felhasználó által összeállított lista a kedvenc könyveiből/novelláiból
+
+### 1.3. Használatieset-modell, funkcionális követelmények
 
 Vendég: Csak a publikus oldalakat éri el
 
