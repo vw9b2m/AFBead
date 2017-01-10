@@ -21,7 +21,17 @@ Funkcionális követelmények:
 - Megbízhatóság: jelszóval védett funkciók, és a jelszavak védelme a háttérben. Hibásan bevitt adatok esetén a program jól láthatóan jelezzen a felhasználónak. A jól bevitt adatok maradjanak az űrlapban.
 - Karbantarthatóság: könnyen lehessen bővíteni, a különböző típusú fájlok külön csoportosítva, ésszerűen legyenek felbontva, a könnyebb fejleszthetőség miatt
 
-### 1.2. Használatieset-modell, funkcionális követelmények
+### 1.2. Szakterületi fogalomjegyzék
+
+#### Fajták:
+
+- Novella: Rövid terjedelmű szépirodalmi mű
+- Könyv : Olyan, szövegből és ábrából álló, fizikai (papír) információhordozójú, nem periodikus (irodalmi vagy szakmai célú) publikáció, amely 49 vagy több oldalból áll.
+
+#### Egyéb:
+- Kedvencek : a felhasználó által összeállított lista a kedvenc könyveiből/novelláiból
+
+### 1.3. Használatieset-modell, funkcionális követelmények
 
 Vendég: Csak a publikus oldalakat éri el
 
@@ -110,11 +120,11 @@ Bejelentkezett:
 
 ### 3.1.1. Fejlesztőkörnyezet
 
-Adonis.js
+- Adonis.js
 
+- Követelmények: Böngésző
 
-Követelmények: Böngésző
-Project élesítésének folyamata:
+- Project élesítésének folyamata:
 
 1. Git repository leclone-ozása
 2. Helyi ide: Visual Studio Code megnyitása, fájl kiválasztása
@@ -154,3 +164,24 @@ Project élesítésének folyamata:
         - user.njk
         - welcome.njk
 
+## 4. Felhasználói dokumentáció
+- követelmények: Internet böngésző telepítése, JavaScript ajánlott
+
+### Program használata:
+
+- Böngészőben nyissuk meg a főoldalt
+- Jobb felső sarokban kattintsunk a Belépés feliratra
+- Belépés/Regisztráció után a Novellák oldalra jutunk
+- Felül a navigéciós bárban(körülbelül középen) Új novella beküldése gombra kattintva tudunk új könyvet/novellát felvenni a listába
+- Töltsük ki az űrlapot
+- Hibás adatok esetén az űrlap jelezni fogja a hibát
+- Ok gombra kattintva mentsük el az adatokat
+- A címre kattintva megjelenik a könyv/novella leírása
+- Törlés gombra kattintva törölhetjük a receptet
+- A Kedvencekhez gombra kattintva a könyvet/novellát kedvenchez adhatja
+- A Módosítás gombra kattintva szerkeszthetjük a könyvet/novellát
+- Böngészés alatt az összes novella/könyv kategória szerint megtekinthető
+
+## 5. Irodalomjegyzék:
+
+http://webprogramozas.inf.elte.hu/alkfejl.php
