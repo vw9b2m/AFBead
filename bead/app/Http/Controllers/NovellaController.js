@@ -169,6 +169,17 @@ class NovellaController {
 
     }
 
+     * ajaxDelete (req, res) {
+        const book = yield Book.find(req.param('id'))
+
+        yield book.delete()
+
+        res.ok({
+            success: true
+        })
+    }
 }
+
+
 
 module.exports = NovellaController
