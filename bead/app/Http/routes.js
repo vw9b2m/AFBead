@@ -40,5 +40,6 @@ Route.get('/logout', 'UserController.doLogout')
 
 Route.group('ajax', function () {
   Route.delete('/novella/:id/delete', 'novellaController.ajaxDelete').middleware('auth')
+  Route.post('/login', 'UserController.ajaxLogin')
 }).prefix('/ajax')
 //Route.on('/').render('welcome')
