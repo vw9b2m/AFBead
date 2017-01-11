@@ -24,10 +24,10 @@ Route.get('/browse', 'NovellaController.browse')
 
 Route.get('/novella/:id', 'NovellaController.show')
 Route.get('/user/:id', 'UserController.show')
-Route.get('/novella/:id/addToFavs', 'NovellaController.addToFavs')
-Route.get('/novella/:id/edit', 'NovellaController.edit')
-Route.post('/novella/:id/edit', 'NovellaController.doEdit')
-Route.post('/novella/:id/delete', 'NovellaController.doDelete')
+Route.get('/novella/:id/addToFavs', 'NovellaController.addToFavs').middleware('auth')
+Route.get('/novella/:id/edit', 'NovellaController.edit').middleware('auth')
+Route.post('/novella/:id/edit', 'NovellaController.doEdit').middleware('auth')
+Route.post('/novella/:id/delete', 'NovellaController.doDelete').middleware('auth')
 
 
 Route.get('/register', 'UserController.register')
