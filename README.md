@@ -185,3 +185,28 @@ Bejelentkezett:
 ## 5. Irodalomjegyzék:
 
 http://webprogramozas.inf.elte.hu/alkfejl.php
+http://webprogramozas.inf.elte.hu/alkfejl/A_dokumentacio_felepitese.pdf
+
+# Harmadik beadandó dokumentálása
+
+## Tesztelés
+
+### 1. Tesztesetek
+
+- Belépés(jó adatokkal) és módosítása
+- Belépés(jó adatokkal) új novella létrehozása - megtekintése a böngészésben - és törlése
+- Belépés(hibás adatokkal)
+- Regisztráció
+- Regisztráció(hibás adatokkal)
+
+### 2. Selenium IDE telepítése és használata
+- opcionális: Mozilla Firefox böngésző
+- a böngésző kiegészítők közt keressük meg és kattintsunk a böngésző hozzáadása gombra
+- a böngésző ekkor újraindítást igényel
+- az IDE az opciók > fejlesztő fül menüjéből indítjható
+- érdemes beállítani hogy indításkor ne rögzítsen egyből
+- Új teszt eset felvétele : File > New Test Case
+- Record
+- Stop Recording
+- Opcionális : Lassúra állítani a visszajátszást
+- Save Tast Case As 
