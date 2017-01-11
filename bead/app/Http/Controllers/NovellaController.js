@@ -178,6 +178,35 @@ class NovellaController {
             success: true
         })
     }
+
+    * ajaxUpdate (req, res) {
+        const user = req.currentUser
+        const book = yield Book.find(req.param('id'))
+
+        if (book === null) {
+            res.notFound('Sorry, novel not found.')
+            return
+        }
+
+        // 1. input
+        const bookData = req.all()
+
+        // TODO: check category
+
+        book.title = bookData.title
+        book.author = bookData.author
+        book.category_id = bookData.category
+        book.description = bookData.description
+        book.user_id = user.id
+
+        yield book.save()
+
+        res.ok({
+            success: true
+        })
+    }
+
+
 }
 
 

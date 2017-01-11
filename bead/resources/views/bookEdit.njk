@@ -1,5 +1,10 @@
 {% extends 'master' %}
 
+{% block scripts %}
+<script src="/scripts/ajaxUpdate.js"></script>
+{% endblock %}
+
+
 {% block content %}
 <h1>Novella módosítása</h1>
 
@@ -13,7 +18,7 @@
 </div>
 {% endif %}
 
-<form class="form-horizontal" action="/novella/{{ book.id }}/edit" method="POST">
+<form class="form-horizontal" action="/novella/{{ book.id }}/edit" method="POST" id="updateBookForm">
   {{ csrfField }}
   <!-- cím-->
   <div class="form-group">
@@ -54,5 +59,21 @@
     </div>
   </div>
 </form>
+
+<span class="help-block"></span>
+
+<div class="modal fade confirm-modal" tabindex="-1" role="dialog" id="updateConfirmModal">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            Biztosan menteni szeretnél?
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success modal-ok" data-dismiss="modal">OK</button>
+            <button type="button" class="btn btn-danger modal-cancel" data-dismiss="modal">Mégse</button>
+        </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
