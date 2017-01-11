@@ -14,12 +14,15 @@
 
 <form action="/novella/{{ book.id }}/delete" method="POST" id="deleteBookForm">
     {{ csrfField }}
+        {% if currentUser %}
+        {% if currentUser.id == book.user_id %}
         <a class="btn btn-primary" href="/novella/{{ book.id }}/edit" role="button">Módosítás</a>
         <button type="submit" class="btn btn-danger">Törlés</button>
+        {% endif %}
         <a class="btn btn-primary" href="/novella/{{ book.id }}/addToFavs" role="button" id="favButton">Kedvencekhez</a> 
         <img src="http://orig02.deviantart.net/9a0e/f/2017/011/0/6/heart_by_ame_y-dav1d8w.png" alt="heart" style="display:none" " id = "heartID">
 </form>
-
+         {% endif %}
 
 <span class="help-block"></span>
 
