@@ -189,6 +189,15 @@ http://webprogramozas.inf.elte.hu/alkfejl/A_dokumentacio_felepitese.pdf
 
 # Harmadik beadandó dokumentálása
 
+## Új elérhető funkciók
+Ajax: 
+Elérés: public > scripts mappában találhatók a scriptek amik magukat a függvényeket tartalmazzák
+- Ajax login: modal-al ("felugró ablakkal") megvalósított bejelentkezés : scripts\ajaxLogin.js
+- Ajax update: modal-al megvalósított módosítása a novellának : scripts\ajaxUpdate.js
+- Ajax delete: modal-al megvalósított törlés : scripts\ajaxDelete.js
+Egyéb:
+- Kedvencekhez : amikor a felhasználó kedvencnek adja az adott művet, egy szívecske tűnik elő majd el : scripts\heart.js
+
 ## Tesztelés
 
 ### 1. Tesztesetek
